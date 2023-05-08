@@ -1,0 +1,3 @@
+rootProject.name = 'show_dialog_plugin'
+
+include ':app'
