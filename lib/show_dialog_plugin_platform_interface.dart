@@ -26,4 +26,8 @@ abstract class ShowDialogPluginPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+  
+   Future<void> showAlertDialog() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
 }

@@ -14,7 +14,10 @@ class MethodChannelShowDialogPlugin extends ShowDialogPluginPlatform {
     final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
-  Future<void> showAleartDialog() async {
+
+  @override
+  Future<void> showAlertDialog() async {
     await methodChannel.invokeMethod('showAlertDialog');
   }
+ 
 }

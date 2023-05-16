@@ -10,6 +10,12 @@ class MockShowDialogPluginPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+  
+  @override
+  Future<void> showAlertDialog() {
+    // TODO: implement showAlertDialog
+    throw UnimplementedError();
+  }
 }
 
 void main() {

@@ -15,12 +15,12 @@ public class ShowDialogPlugin: NSObject, FlutterPlugin {
          }
          else if (call.method == "showAlertDialog") {
              DispatchQueue.main.async {
-                 let alert = UIAlertController(title: "Alert", message: "Hi, My name is flutter", preferredStyle: .alert);
-                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                 let alert = UIAlertController(title: "Alert", message: "Hi, My name is Augustine", preferredStyle: .alert);
+                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
                  UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil);
              }
          }
    }
    // result("iOS " + UIDevice.current.systemVersion)
   }
-}
+

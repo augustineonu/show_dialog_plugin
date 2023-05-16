@@ -11,6 +11,6 @@ class ShowDialogPlugin {
   }
 
   Future<void> showDialog () {
-    return methodChannelPluginShowdialod.showAleartDialog();
+    return ShowDialogPluginPlatform.instance.showAlertDialog();
   }
 }
